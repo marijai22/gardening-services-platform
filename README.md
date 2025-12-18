@@ -18,10 +18,6 @@ Users can add, position, and configure various garden elements through a modern,
 - **Database**: MongoDB  
 - **Architecture**: RESTful API
 
-## 📚 Course Context
-
-This project was developed as a part of the *Programming Internet Applications (PIA)* course and serves as a practical example of building robust, full-stack web applications using modern JavaScript technologies.
-
 ## 🎯 Key Features
 
 - Intuitive interface for garden layout creation  
