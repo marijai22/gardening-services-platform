@@ -22,7 +22,7 @@ Users can add, position, and configure various garden elements through a modern,
 
 This project was developed as a part of the *Programming Internet Applications (PIA)* course and serves as a practical example of building robust, full-stack web applications using modern JavaScript technologies.
 
-## 📸 Key Features
+## 🎯 Key Features
 
 - Intuitive interface for garden layout creation  
 - Interactive drag-and-drop functionality for easy customization  
