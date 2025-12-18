@@ -1,0 +1,175 @@
+
+/* Osnovni stilovi za html i body */
+html, body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    
+}
+
+/* Stilovi za body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(220, 236, 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Stilovi za h2 */
+h2 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+/* Stilovi za kontejner */
+.container {
+    background-color: rgb(248, 246, 244);
+    color: rgb(23, 49, 29);
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #224422;
+}
+
+/* Stilovi za redove */
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.label {
+    width: 270px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.input input[type="text"] {
+    flex: 1; /* Дозвољава уносу да узме већину доступног простора */
+    margin-right: 5px; /* Прави мало простора између уноса и иконе */
+}
+
+
+/* Стилови за икону кредитне картице */
+.icon {
+    display: none;
+    width: 22px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+}
+
+.icon.show {
+    display: inline-block;
+}
+
+.icon.diners {
+    background-image: url('../../assets/images/diners.png');
+}
+
+.icon.master {
+    background-image: url('../../assets/images/master.png');
+}
+
+.icon.visa {
+    background-image: url('../../assets/images/visa.png');
+}
+
+
+
+/* Stilovi za meni */
+.main-header {
+    background-color: #92b687;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilovi za meni */
+.main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-menu ul li {
+    margin: 0 30px;
+}
+
+.main-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 25px; /* Povećani padding za veće dugme */
+    border-radius: 4px;
+    display: block;
+    font-size: 24px; /* Veći font za bolju vidljivost */
+    font-weight: bold; /* Podebljan font za dodatnu naglašenost */
+}
+
+.main-menu ul li a:hover {
+    background-color: #497530;
+}
+
+
+/* Stilovi za sadržaj */
+.content {
+    margin-top: 140px; /* Razmak od vrha da bi se sadržaj pomerio ispod menija */
+    padding: 20px;
+    min-height: 100vh; /* Osigurava da sadržaj pokriva celokupnu visinu prozora */
+    box-sizing: border-box; /* Uključuje padding u ukupnu visinu */
+}
+
+/* Stilovi za sekcije */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Стилови за дугмад */
+button {
+    background-color: #418d53;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #165c25;
+}
+
+
+
+.err {
+    color: red;
+}

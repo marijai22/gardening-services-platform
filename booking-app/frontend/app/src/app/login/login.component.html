@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ulogujte se</title>
+   
+</head>
+
+<body>
+
+    <header>
+        <h2>Ulogujte se</h2>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="label">Korisničko ime:</div>
+            <div class="input">
+                <input type="text" name="username" [(ngModel)]="username">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Lozinka:</div>
+            <div class="input">
+                <input type="password" name="password" [(ngModel)]="password">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input">
+                <button (click)="login()">Prijavi se</button>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="font-size: 16px;">
+            <div >Nemate profil? </div>
+            <a [routerLink]="'register'">Registrujte se(kao vlasnik)</a>
+        </div>
+        <div class="row" style="font-size: 16px;">
+            <div >Zelite novu sifru? </div>
+            <a [routerLink]="'changePass'">Promeni lozinku</a>
+        </div>
+
+        <p class="err">
+            {{error}}
+        </p>
+    </div>
+
+</body>
+
+</html>

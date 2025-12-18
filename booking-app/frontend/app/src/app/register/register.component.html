@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registracija vlasnika</title>
+</head>
+<body>
+    <header>
+        <h2>Registrujte se kao vlasnik</h2>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="label">Korisnicko ime:</div>
+            <div class="input">
+                <input type="text" name="username" [(ngModel)]="username" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Lozinka:</div>
+            <div class="input">
+                <input type="password" name="password" [(ngModel)]="password" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Ime:</div>
+            <div class="input">
+                <input type="text" name="name" [(ngModel)]="name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Prezime:</div>
+            <div class="input">
+                <input type="text" name="surname" [(ngModel)]="surname" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Pol:</div>
+            <div class="input">
+                <input type="radio" name="gender" value="M" [(ngModel)]="pol" required>M
+                <input type="radio" name="gender" value="Z" [(ngModel)]="pol" required>Z
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Adresa:</div>
+            <div class="input">
+                <input type="text" name="address" [(ngModel)]="address" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Kontakt telefon:</div>
+            <div class="input">
+                <input type="text" name="number" [(ngModel)]="number" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Mejl adresa:</div>
+            <div class="input">
+                <input type="text" name="email" [(ngModel)]="email" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Profilna slika:</div>
+            <div class="input">
+                <input type="file" name="profilePicture" (change)="onFileSelected($event)">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">Broj kreditne kartice:</div>
+            <div class="input">
+                <input type="text" name="cardNumber" [(ngModel)]="cardNumber" (ngModelChange)="checkCardNumber(cardNumber)" required>
+                <div id="card" class="icon"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input">
+                <button (click)="register()">Registruj se</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="err">
+                {{error}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

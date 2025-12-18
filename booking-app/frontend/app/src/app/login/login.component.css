@@ -1,0 +1,112 @@
+
+html, body {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(220, 236, 224);
+    /*background-image: url('../../assets/images/flower5.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    height: 100vh;
+    font-size: 20px;
+    
+}
+
+/* Стилови за заглавље */
+header {
+    background-color: #92b687; /* Зелена позадина */
+    color: rgb(23, 49, 29); /* Боја текста на позадини */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    margin-top: 0;
+    margin: 0;
+    border-radius: 0; /* Uklanja bilo kakvu zaobljenost ako postoji */
+    box-shadow: none;
+    position: relative
+    
+}
+
+h2 {
+    margin: 0;
+    margin-top: 0;
+    font-size: 40px;
+}
+
+/* Стилови за контејнер */
+.container {
+    background-color: rgb(248, 246, 244);
+    color:rgb(23, 49, 29) ;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #224422;
+    margin-top: 80px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.label {
+    width: 270px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input input[type="text"] {
+    flex: 1; /* Дозвољава уносу да узме већину доступног простора */
+    margin-right: 5px; /* Прави мало простора између уноса и иконе */
+}
+
+.input input,
+.input select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input input[type="radio"] {
+    width: auto;
+}
+
+/* Стилови за дугмад */
+button {
+    background-color: #418d53;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #165c25;
+}
+
+
+.err{
+    color: red;
+}

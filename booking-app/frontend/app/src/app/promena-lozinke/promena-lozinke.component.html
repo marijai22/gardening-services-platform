@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Registracija</title>
+</head>
+<body>
+    <header>
+        <h2>Promenite lozinku</h2>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="label">Korisnicko ime:</div>
+            <div class="input">
+                <input type="text" name="username" [(ngModel)]="username" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Stara lozinka:</div>
+            <div class="input">
+                <input type="password" name="password" [(ngModel)]="oldPass" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Nova lozinka:</div>
+            <div class="input">
+                <input type="password" name="password" [(ngModel)]="newPass" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Ponovljena nova lozinka:</div>
+            <div class="input">
+                <input type="password" name="password" [(ngModel)]="repeatedNewPass" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input">
+                <button (click)="changePass()">Promeni lozinku</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="err">
+                {{error}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

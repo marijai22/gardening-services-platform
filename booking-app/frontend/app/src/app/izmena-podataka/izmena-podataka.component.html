@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Azuriranje Podataka</title>
+</head>
+<body>
+    <header>
+        <h2>Azurirajte podatke</h2>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="label">Korisnicko ime:</div>
+            <div class="input">
+                <input type="text" [(ngModel)]="korisnik.kor_ime" name="username">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Lozinka:</div>
+            <div class="input">
+                <input type="text" [(ngModel)]="korisnik.lozinka" name="password">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Ime:</div>
+            <div class="input">
+                <input type="text" [(ngModel)]="korisnik.ime" name="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Prezime:</div>
+            <div class="input">
+                <input type="text" [(ngModel)]="korisnik.prezime" name="surname">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Adresa:</div>
+            <div class="input">
+                <input type="text" [(ngModel)]="korisnik.adresa" name="address">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Broj telefona:</div>
+            <div class="input">
+                <input type="text" [(ngModel)]="korisnik.telefon" name="number">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Mejl adresa:</div>
+            <div class="input">
+                <input type="text" [(ngModel)]="korisnik.mejl" name="mail">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">Broj kreditne kartice:</div>
+            <div class="input">
+                <input type="text" [(ngModel)]="korisnik.broj_kartice" name="cardNumber">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label"></div>
+            <div class="input">
+                <button (click)="updateUserInfo()">Azuriraj podatke</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

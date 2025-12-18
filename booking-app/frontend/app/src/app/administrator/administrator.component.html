@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Spisak vlasnika i dekoratera</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Spisak svih korisnika</h2>
+        <div class="tables-container">
+            <!-- Tabela vlasnika -->
+            <div class="table-wrapper">
+                <h3>Vlasnici</h3>
+                <table>
+                    <tr>
+                        <th>Korisničko ime</th>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Mejl</th>
+                        <th>Izmeni</th>
+                    </tr>
+                    <tr *ngFor="let n of owners">
+                        <td>{{n.kor_ime}}</td>
+                        <td>{{n.ime}}</td>
+                        <td>{{n.prezime}}</td>
+                        <td>{{n.mejl}}</td>
+                        <td>
+                            <button (click)="updateUser(n)">Azuriraj</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Tabela dekoratera -->
+            <div class="table-wrapper">
+                <h3>Dekorateri</h3>
+                <table>
+                    <tr>
+                        <th>Korisničko ime</th>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Mejl</th>
+                        <th>Izmeni</th>
+                    </tr>
+                    <tr *ngFor="let n of decoraters">
+                        <td>{{n.kor_ime}}</td>
+                        <td>{{n.ime}}</td>
+                        <td>{{n.prezime}}</td>
+                        <td>{{n.mejl}}</td>
+                        <td>
+                            <button (click)="updateUser(n)">Azuriraj</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Zahtevi za registraciju</h2>
+        <div class="tables-container">
+            
+            <div class="table-wrapper">
+                <table>
+                    <tr>
+                        <th>Korisničko ime</th>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Mejl</th>
+                        <th>Broj telefona</th>
+                        <th>Izmeni</th>
+                    </tr>
+                    <tr *ngFor="let n of requests">
+                        <td>{{n.kor_ime}}</td>
+                        <td>{{n.ime}}</td>
+                        <td>{{n.prezime}}</td>
+                        <td>{{n.mejl}}</td>
+                        <td>{{n.telefon}}</td>
+                        <td>
+                            <button (click)="accept(n)">Odobri</button>
+                            <button (click)="deny(n)">Odbij</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
