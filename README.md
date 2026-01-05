@@ -1,4 +1,4 @@
-# 🌿 Garden Design Platform – MEAN Stack Web Application
+# 🌿 Service Booking Web Platform – MEAN Stack Web Application
 
 This is a full-stack web application developed using the MEAN stack (MongoDB, Express.js, Angular, Node.js). The project was created as part of the *Programming Internet Applications (PIA)* course and showcases the development of a dynamic and interactive web platform.
 
